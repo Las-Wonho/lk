@@ -1,6 +1,6 @@
 public class Cell implements Printable {
     public boolean state_of_life;
-    Cell(){
+    public boolean futher;
 
     Cell() {
         state_of_life = true;
