@@ -88,5 +88,15 @@ public class Tissue implements Printable{
             }
         }
     }
+    public void print(){
+
+        System.out.println("N is "+N);
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                System.out.print(" "+get(i,j));
+            }
+            System.out.println();
+        }
+        System.out.println("=========");
     }
 }
