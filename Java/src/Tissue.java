@@ -58,5 +58,35 @@ public class Tissue implements Printable{
             return true;
         return false;
     }
+
+    boolean neighbor(int _x, int _y) {
+        Cell me = get(_x, _y);
+        int count = 0;
+        if (cell_check(get(_x - 1, _y))) {
+            count += get(_x - 1, _y).state_of_life ? 1 : 0;
+        }
+        if (cell_check(get(_x + 1, _y))) {
+            count += get(_x + 1, _y).state_of_life ? 1 : 0;
+        }
+        if (cell_check(get(_x, _y - 1))) {
+            count += get(_x, _y - 1).state_of_life ? 1 : 0;
+        }
+        if (cell_check(get(_x, _y + 1))) {
+            count += get(_x, _y + 1).state_of_life ? 1 : 0;
+        }
+        if (me.state_of_life) {
+            if (count == 2 || count == 3) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (count == 3) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
     }
 }
