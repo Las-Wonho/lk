@@ -9,16 +9,17 @@ class CellTest {
 
     @Test
     @DisplayName("Cell create test")
-    void cell_crate(){
+    void cell_crate() {
         cell = new Cell();
         assertTrue(cell.state_of_life == true);
 
         cell = new Cell(false);
         assertTrue(cell.state_of_life != false);
     }
+
     @Test
     @DisplayName("Cell toString test")
-    void cell_toString(){
+    void cell_toString() {
         cell = new Cell();
         assertTrue(cell.toString().equals("live"));
 
