@@ -6,4 +6,10 @@ public class Cell {
     Cell(boolean state){
         state_of_life = true;
     }
+    @Override
+    public String toString(){
+        if(state_of_life)
+            return "live";
+        return "dead";
+    }
 }
