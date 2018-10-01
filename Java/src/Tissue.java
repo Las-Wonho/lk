@@ -33,5 +33,14 @@ public class Tissue implements Printable{
         }
     }
 
+    Cell get(int _x, int _y) {
+
+        if (!is_safeAccess(_x, _y)) {
+
+            return null;
+        }
+
+        return cells[_x][_y];
+    }
     }
 }
