@@ -16,5 +16,13 @@ class CellTest {
         cell = new Cell(false);
         assertTrue(cell.state_of_life != false);
     }
+    @Test
+    @DisplayName("Cell toString test")
+    void cell_toString(){
+        cell = new Cell();
+        assertTrue(cell.toString().equals("live"));
 
+        cell = new Cell(false);
+        assertTrue(cell.toString().equals("dead"));
+    }
 }
