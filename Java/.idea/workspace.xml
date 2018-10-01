@@ -18,8 +18,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CellTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/CellTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="239">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TissueTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TissueTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TissueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="1026">
               <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
             </state>
           </provider>
@@ -94,13 +94,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/cell.java" />
         <option value="$PROJECT_DIR$/test/CellTest.groovy" />
-        <option value="$PROJECT_DIR$/test/CellTest.java" />
         <option value="$PROJECT_DIR$/src/Neighbor.java" />
         <option value="$PROJECT_DIR$/src/Printable.java" />
         <option value="$PROJECT_DIR$/src/Tissue.java" />
         <option value="$PROJECT_DIR$/src/Cell.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/TissueTest.java" />
+        <option value="$PROJECT_DIR$/test/CellTest.java" />
       </list>
     </option>
   </component>
@@ -166,13 +166,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TissueTest.next">
+  <component name="RunManager" selected="JUnit.All in Java">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="All in Java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="CellTest.cell_crate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
@@ -182,23 +199,6 @@
       <option name="MAIN_CLASS_NAME" value="CellTest" />
       <option name="METHOD_NAME" value="cell_crate" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TissueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TissueTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -245,15 +245,15 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CellTest.cell_crate" />
-      <item itemvalue="JUnit.TissueTest" />
+      <item itemvalue="JUnit.All in Java" />
       <item itemvalue="JUnit.TissueTest.neighbor" />
       <item itemvalue="JUnit.TissueTest.next" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Java" />
         <item itemvalue="JUnit.TissueTest.next" />
         <item itemvalue="JUnit.TissueTest.neighbor" />
-        <item itemvalue="JUnit.TissueTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CellTest.cell_crate" />
       </list>
@@ -273,9 +273,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TissueTest - 2018.10.01 at 20h 20m 33s.xml">
-      <configuration name="TissueTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TissueTest - 2018.10.01 at 20h 21m 51s.xml">
       <configuration name="TissueTest" configurationId="JUnit" />
     </history-entry>
@@ -302,6 +299,9 @@
     </history-entry>
     <history-entry file="TissueTest_next - 2018.10.01 at 20h 33m 09s.xml">
       <configuration name="TissueTest.next" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Java - 2018.10.01 at 20h 50m 10s.xml">
+      <configuration name="All in Java" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -341,7 +341,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -382,23 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tissue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -408,8 +391,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TissueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="1026">
           <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CellTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

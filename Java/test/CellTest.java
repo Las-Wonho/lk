@@ -14,7 +14,7 @@ class CellTest {
         assertTrue(cell.state_of_life == true);
 
         cell = new Cell(false);
-        assertTrue(cell.state_of_life != false);
+        assertTrue(cell.state_of_life == false);
     }
 
     @Test
