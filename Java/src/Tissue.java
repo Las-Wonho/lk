@@ -42,5 +42,13 @@ public class Tissue implements Printable{
 
         return cells[_x][_y];
     }
+
+    boolean cell_check(Cell cell) {
+        if (cell == null)
+            return false;
+        if (cell.state_of_life)
+            return true;
+        return false;
+    }
     }
 }
