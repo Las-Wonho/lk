@@ -1,4 +1,4 @@
-public class Tissue implements Printable{
+public class Tissue implements Printable {
     int x, y;
     int N;
     Cell[][] cells;
@@ -14,6 +14,7 @@ public class Tissue implements Printable{
             }
         }
     }
+
     Tissue(int _n, int _m, String map) {
         x = _n;
         y = _m;
@@ -22,10 +23,9 @@ public class Tissue implements Printable{
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
                 char c = map_resource[i].charAt(j);
-                if(c=='1'){
+                if (c == '1') {
                     cells[i][j] = new Cell(true);
-                }
-                else{
+                } else {
                     cells[i][j] = new Cell(false);
                 }
 
@@ -43,6 +43,12 @@ public class Tissue implements Printable{
             for (int j = 0; j < y; j++) {
                 get(i, j).state_of_life = get(i, j).futher;
             }
+        }
+    }
+
+    void next(int n) {
+        for (int i = 0; i < n; i++) {
+            next();
         }
     }
 
@@ -101,12 +107,13 @@ public class Tissue implements Printable{
             }
         }
     }
-    public void print(){
 
-        System.out.println("N is "+N);
+    public void print() {
+
+        System.out.println("N is " + N);
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
-                System.out.print(" "+get(i,j));
+                System.out.print(" " + get(i, j));
             }
             System.out.println();
         }
