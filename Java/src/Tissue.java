@@ -33,6 +33,14 @@ public class Tissue implements Printable{
         }
     }
 
+    boolean is_safeAccess(int _x, int _y) {
+        if (x <= _x || y <= _y)
+            return false;
+        if (_x < 0 || _y < 0)
+            return false;
+        return true;
+    }
+
     Cell get(int _x, int _y) {
 
         if (!is_safeAccess(_x, _y)) {
