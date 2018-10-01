@@ -51,4 +51,16 @@ class TissueTest {
         assertFalse(t.neighbor(4,3));
     }
 
+    @Test
+    void next() {
+        try {
+            Tissue t = new Tissue(5, 5, map);
+            t.next();
+
+            assertTrue(t.get(4,2).state_of_life);
+            assertFalse(t.get(4,1).state_of_life);
+        } catch (Exception e) {
+            assertTrue(false);
+        }
+    }
 }
