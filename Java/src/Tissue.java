@@ -33,6 +33,19 @@ public class Tissue implements Printable{
         }
     }
 
+    void next() {
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                get(i, j).futher = neighbor(i, j);
+            }
+        }
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                get(i, j).state_of_life = get(i, j).futher;
+            }
+        }
+    }
+
     boolean is_safeAccess(int _x, int _y) {
         if (x <= _x || y <= _y)
             return false;
