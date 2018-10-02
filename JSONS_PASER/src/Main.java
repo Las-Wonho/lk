@@ -59,7 +59,7 @@ public class Main {
             json.put(s,new _Any(new HashMap<String, _Any>()));
             JsonArray j = e.getAsJsonArray();
             for (int i = 0; i < j.size(); i++) {
-                parse(json, j.get(i),String.valueOf(i));
+                parse(json.get(s).get_json_Array(), j.get(i),String.valueOf(i));
             }
         }
     }
