@@ -117,6 +117,6 @@ public class Tissue implements Printable {
             }
             System.out.println();
         }
-        System.out.println("=========");
+        System.out.println();
     }
 }
