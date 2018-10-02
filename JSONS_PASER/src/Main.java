@@ -11,6 +11,7 @@ public class Main {
         String _json = "{\n" +
                 "  \"name\": \"Shuvi\",\n" +
                 "  \"version\": \"0.0.1\",\n" +
+                "  \"arrays\": [1,2,3,4],\n" +
                 "  \"description\": \"Electron製のYouTubeプレイヤー「Shuvi」\",\n" +
                 "  \"main\": \"src/bin/js/bin.js\",\n" +
                 "  \"scripts\": {\n" +
@@ -33,6 +34,8 @@ public class Main {
 
         System.out.println(json.get("version").get_string());
         System.out.println(json.get("name").get_string());
+        System.out.println(json.get("arrays").get_json_Array().get("1").get_int());
+
         System.out.println(json.get("scripts").get_json_Array().get("start").get_string());
 
     }
