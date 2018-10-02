@@ -10,11 +10,9 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         String _json = "";
-        
+
         JsonParser parser = new JsonParser();
         JsonElement element = parser.parse(_json);
-
-
         Map<String, _Any> json;
         json = new HashMap<>();
         parse(json, element.getAsJsonObject());
