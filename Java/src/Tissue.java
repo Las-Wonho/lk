@@ -46,6 +46,7 @@ public class Tissue implements Printable {
                 get(i, j).state_of_life = get(i, j).futher;
             }
         }
+        N+=1;
     }
 
     void next(int n) {
