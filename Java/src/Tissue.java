@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Tissue implements Printable {
     int x, y;
     int N;
@@ -51,7 +53,9 @@ public class Tissue implements Printable {
             next();
         }
     }
-
+    void tern_up(InputLayer layer){
+        next(layer.scanner.nextInt());
+    }
     boolean is_safeAccess(int _x, int _y) {
         if (x <= _x || y <= _y)
             return false;

@@ -6,6 +6,7 @@ public class Main {
         // write your code here
         InputLayer layer = new InputLayer(System.in);
         Tissue map = layer.DetectInout();
+        map.tern_up(layer);
         map.print();
     }
 }
