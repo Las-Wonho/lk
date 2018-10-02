@@ -11,11 +11,7 @@ public class Json_Parse {
         if (e.isJsonPrimitive()) {
             JsonPrimitive jsonPrimitive = e.getAsJsonPrimitive();
             if (jsonPrimitive.isNumber()) {
-                try {
-                    json.put(s, new _Any(e.getAsJsonPrimitive().getAsDouble()));
-                }catch (Exception ex){
-                    json.put(s, new _Any(e.getAsJsonPrimitive().getAsInt()));
-                }
+                    json.put(s, new _Any(e));
 
             } else if (jsonPrimitive.isString()) {
                 json.put(s, new _Any(e.getAsJsonPrimitive().getAsString()));
