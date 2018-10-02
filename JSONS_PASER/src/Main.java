@@ -36,5 +36,14 @@ public class Main {
         System.out.println(json.get("scripts").get_json_Array().get("start").get_string());
 
     }
+    static void parse(Map<String,_Any> json,JsonElement e,String s){
+        if(e.isJsonPrimitive()){
+            try {
+                json.put(s,new _Any(e.getAsJsonPrimitive().getAsInt()));
+            }catch (NumberFormatException r){
+                json.put(s,new _Any(e.getAsJsonPrimitive().getAsString()));
+            }
+        }
+    }
     }
 }
