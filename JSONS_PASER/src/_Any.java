@@ -1,3 +1,5 @@
+import com.google.gson.JsonPrimitive;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -5,6 +7,9 @@ public class _Any {
     Object value;
 
     _Any(Object v) {
+        value = v;
+    }
+    _Any(JsonPrimitive v) {
         value = v;
     }
 
@@ -18,7 +23,7 @@ public class _Any {
 
     int get_int() {
         try {
-            return (int) Integer.class.cast(value);
+            return JsonPrimitive.class.cast(value).getAsInt();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -27,7 +32,7 @@ public class _Any {
 
     boolean get_bool() {
         try {
-            return (boolean) Boolean.class.cast(value);
+            return Boolean.class.cast(value);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -36,7 +41,7 @@ public class _Any {
 
     double get_double() {
         try {
-            return (double) Double.class.cast(value);
+            return JsonPrimitive.class.cast(value).getAsDouble();
         } catch (Exception e) {
         }
         return 0;
