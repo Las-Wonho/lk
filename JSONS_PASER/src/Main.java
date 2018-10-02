@@ -38,10 +38,13 @@ public class Main {
     }
     static void parse(Map<String,_Any> json,JsonElement e,String s){
         if(e.isJsonPrimitive()){
-            try {
+            JsonPrimitive jsonPrimitive = e.getAsJsonPrimitive();
+            if(jsonPrimitive.isNumber()) {
                 json.put(s,new _Any(e.getAsJsonPrimitive().getAsInt()));
-            }catch (NumberFormatException r){
+            }else if(jsonPrimitive.isString()){
                 json.put(s,new _Any(e.getAsJsonPrimitive().getAsString()));
+            }else if(jsonPrimitive.isBoolean()){
+                json.put(s,new _Any(e.getAsJsonPrimitive().getAsBoolean()));
             }
         }
         if(e.isJsonObject()){
