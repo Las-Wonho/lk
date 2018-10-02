@@ -45,5 +45,8 @@ public class Main {
             }
         }
     }
+    static void parse(Map<String,_Any> json,JsonObject j){
+        j.entrySet().iterator().forEachRemaining(stringJsonElementEntry -> {parse(json,stringJsonElementEntry.getValue(),stringJsonElementEntry.getKey());});
+
     }
 }
