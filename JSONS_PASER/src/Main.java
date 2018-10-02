@@ -49,6 +49,13 @@ public class Main {
 
             parse(json.get(s).get_json_Array(),e.getAsJsonObject());
         }
+        if(e.isJsonArray()){
+            json.put(s,new _Any(new HashMap<String, _Any>()));
+            JsonArray j = e.getAsJsonArray();
+            for (int i = 0; i < j.size(); i++) {
+                parse(json, j.get(i),String.valueOf(i));
+            }
+        }
     }
     static void parse(Map<String,_Any> json,JsonObject j){
         j.entrySet().iterator().forEachRemaining(stringJsonElementEntry -> {parse(json,stringJsonElementEntry.getValue(),stringJsonElementEntry.getKey());});
