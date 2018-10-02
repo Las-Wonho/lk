@@ -44,6 +44,11 @@ public class Main {
                 json.put(s,new _Any(e.getAsJsonPrimitive().getAsString()));
             }
         }
+        if(e.isJsonObject()){
+            json.put(s,new _Any(new HashMap<String, _Any>()));
+
+            parse(json.get(s).get_json_Array(),e.getAsJsonObject());
+        }
     }
     static void parse(Map<String,_Any> json,JsonObject j){
         j.entrySet().iterator().forEachRemaining(stringJsonElementEntry -> {parse(json,stringJsonElementEntry.getValue(),stringJsonElementEntry.getKey());});
