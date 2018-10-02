@@ -27,5 +27,14 @@ public class Main {
 
 
 
+        Map<String, _Any> json;
+        json = new HashMap<>();
+        parse(json,element.getAsJsonObject());
+
+        System.out.println(json.get("version").get_string());
+        System.out.println(json.get("name").get_string());
+        System.out.println(json.get("scripts").get_json_Array().get("start").get_string());
+
+    }
     }
 }
