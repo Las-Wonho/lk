@@ -17,6 +17,6 @@ class JsonTest {
         JsonElement element = parser.parse(_json);
         Map<String, _Any> json;
         json = new HashMap<>();
-        parse(json, element.getAsJsonObject());
+        Json_Parse.parse(json, element.getAsJsonObject());
     }
 }
