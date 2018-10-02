@@ -25,6 +25,15 @@ public class _Any {
         return 0;
     }
 
+    boolean get_bool() {
+        try {
+            return (boolean) Boolean.class.cast(value);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     double get_double() {
         try {
             return (double) Double.class.cast(value);
